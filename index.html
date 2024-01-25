@@ -141,7 +141,9 @@ color: rgb(68, 69, 70);
 .sub2{
     width: 20%;
     height: 50px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub3{
@@ -150,6 +152,7 @@ color: rgb(68, 69, 70);
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 @media screen and (max-width:800px){
@@ -160,29 +163,28 @@ color: rgb(68, 69, 70);
 }
 
 @media screen and (max-width:800px){
-    .sub2 , .sub4 , .nav-resposive{
+    .sub2{
         display: none;
     }
 }
 
-@media screen and (min-width:800px) and (max-width:1000000000px){
-    .sub3{
-        display: none;
-    }
-}
 
-.nav-resposive{
-    width: 20%;
-    height: 50px;
 
-}
 
 .sub4{
     width: 20%;
     height: 50px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   align-items: center;
 }
 
+@media screen and (max-width:800px){
+    .sub4{
+        display: none;
+    }
+}
 
 .sub5{
     width: 20%;
@@ -190,6 +192,7 @@ color: rgb(68, 69, 70);
     display: flex;
     justify-content: right;
     align-items: center;
+    
 }
 
 /*navebar*/
@@ -219,12 +222,82 @@ color: rgb(68, 69, 70);
             width: 100%;
             display: flex;
         }
+
+
+
+        /*footer*/
         footer{
             width: 100%;
-            height: 100px;
-            background-color:  rgb(0, 158, 227);
-      margin-top: 10px;
+      margin-top: 10px;  
+      background-color: rgb(0, 158, 227);
         }
+
+
+        .group-footer{
+            width: 100%;
+            background-color: rgb(0, 158, 227);
+      margin-top: 10px; 
+      display: flex;
+  
+        }
+
+.sup{
+    width: 25%;
+    background-color: rgb(0, 158, 227);
+    display: flex;
+    justify-content: center;
+
+}
+
+.company-marca{
+    width: 25%;  
+    background-color: rgb(0, 158, 227);
+    display: flex;
+    justify-content: center;
+}
+.prodcts{
+    width: 25%;  
+    background-color: rgb(0, 158, 227);
+    display: flex;
+    justify-content: center;
+}
+.more{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 158, 227);
+}
+
+.cop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid aliceblue;
+    background-color: rgb(0, 158, 227);
+height: 40px;
+}
+
+
+@media screen and (max-width:900px){
+    .group-footer{
+  display: flex;
+  flex-direction: column;
+    }
+}
+@media screen and (max-width:900px){
+    .more, .prodcts, .company-marca , .sup{
+  width: 100%;
+  border-bottom: 1px solid aliceblue;
+
+    }
+}
+/*footer*/
+
+
+
+
+
         .video-suc{
             border-radius: 12px;
             background-color: #f1f1f1;
@@ -262,7 +335,7 @@ color: rgb(68, 69, 70);
         .logo{
             width: 25px;
             height: 25px;
-            margin-left: 5px;
+            margin-left: 10px;
         }
         h1{
             margin-left: 7px;
@@ -346,8 +419,9 @@ align-items: center;
 
 
 .posi-p{
+ 
     width: 100%;
-    height: 50px;
+    height: 1px;
     position: fixed;
     bottom: 100px;
     display: flex;
@@ -379,6 +453,16 @@ align-items: center;
     }
 }
 
+
+@media screen and (min-width:800px) and (max-width:1000000px){
+    #resposi-id-post-img{
+        height: 425px;
+    }
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -389,7 +473,8 @@ align-items: center;
       <a href="!"> <li style="padding: 5px; color:  rgb(0, 158, 227);">goutel</li></a>
            <a href="#">   <li style="padding: 5px; color:  rgb(0, 158, 227);">tel</li></a>
          <a href="@">  <li style="padding: 5px; color:  rgb(0, 158, 227);">group G</li></a>
-         <a href="!">  <li style="padding: 5px; color:  rgb(0, 158, 227);">...+</li></a>
+         <a href="@">  <li style="padding: 5px; color:  rgb(0, 158, 227);">comunidade</li></a>
+         <a href="!">  <li style="padding: 5px; color:  rgb(0, 73, 104);">...+</li></a>
 
         </ul>
     </div>
@@ -398,24 +483,24 @@ align-items: center;
 
 
 <div class="sub1">
-    <a href="#">
+    <a href="esporte.html">
     <img style="border-radius: 50%; background-color: yellow; margin-left: 12px; padding: 4px;" width="30px" height="30px" src="img/icone-bola.png" alt=""></a>
 </div>
 
 
 
-<div class="sub2"></div>
+<div class="sub2"><a  style="color: white;"  href="#">Esporte</a></div>
 
 <div class="sub3">
     <a href="%"><img width="33px" src="img/logo-icone-favicon.png" height="33px" alt="logo goutel"></a>
 </div>
-<div class="nav-resposive"></div>
 
-<div class="sub4"></div>
+
+<div class="sub4"><a  style="color: white;"  href="#">TV goutel</a></div>
 
 
 <div class="sub5">
-    <a href="$">
+    <a href="noticia.html">
     <img style="border-radius: 50%; background-color: yellow; margin-right: 12px; padding: 4px;" width="30px" height="30px" src="img/tv-icon.png" alt=""></a>
 </a>
 </div>
@@ -565,7 +650,7 @@ align-items: center;
         
 
 
-<!--post blog3-->
+<!--post blog modelo img-->
 <div class="group">
 
     <div class="sig1">
@@ -581,18 +666,20 @@ align-items: center;
     
     
     <div class="cont">
-        <div class="data-post" style="position: absolute;">
-            <p style="background-color: rgb(0, 158, 227); color: white; font-size: 10px; margin: 5px; border-radius: 2px;">00/00/0000</p>
+        <div class="data-post" style="position: absolute; display: flex;">
+            <p style="background-color: rgb(0, 158, 227); color: white; font-size: 10px; margin: 5px; border-radius: 2px;">00/00/0000 23h:09</p>
         </div>
-        <div class="reposivel"><video class="video-top"   poster="img/banner2.png"       class="video-suc" controls width="100%" src="video/trailer-som.mp4"></video></div>
+        <div class="reposivel">
+            
+            <img class="video-top"  height="320px" id="resposi-id-post-img"    class="video-suc"  width="100%" src="https://www.seoclerk.com/pics/000/951/134/f889272345a569d40799d29dca61d254.png"></div>
        
     
        
         <div class="group-t">
             <div class="logo-titulo">
-                <a href="¨!">
+                <a href="post2.html">
                 <img class="logo" src="img/logo-icone-favicon.png" alt=""></a>
-                <a href="*">
+                <a href="post2.html">
                 <h1>viswo #titulo || video</h1></a>
             </div>
             <div class="shrare">
@@ -695,52 +782,106 @@ align-items: center;
 
 
 
-        <div class="cookies-msg" id="cookies-mdg">
-            <div class="cookies-txt">
-                <p class="avxan">cookies: Usamos para personalizar conteúdos e melhorar sua experiência <a class="dhmswj" href="$">saiba mais</a></p>
-           
-           
-          <div class="cookies-btn">
-            <button onclick="aceito()"   class="botao-hhd">
-              entendi
-            </button>
-          </div>
-            </div>
-        </div>
-        <script>
-      
-    var msg = document.getElementById('cookies-mdg')
-    
-    function aceito(){
-    localStorage.lgpd = "sim"
-    msg.classList.remove('mostrar')
-    }
-    
-    if(localStorage.lgpd == 'sim'){
-        msg.classList.remove('mostrar')
-    }else{
-        msg.classList.add('mostrar')
-    }
-    
-        </script>
-
-
-
-
-
 
 <di class="posi-p">
-<a href="group.html">
+<a href="comunidade.html">
     <img src="img/logo-icone-favicon.png" alt="" class="img-posi-m"></a>
 </di>
 
 
 
+<!--cookies-->
+<div class="cookies-msg" id="cookies-mdg">
+    <div class="cookies-txt">
+        <p class="avxan">cookies: Usamos para personalizar conteúdos e melhorar sua experiência <a class="dhmswj" href="$">saiba mais</a></p>
+   
+   
+  <div class="cookies-btn">
+    <button onclick="aceito()"   class="botao-hhd">
+      entendi
+    </button>
+  </div>
+    </div>
+</div>
+<script>
+
+var msg = document.getElementById('cookies-mdg')
+
+function aceito(){
+localStorage.lgpd = "sim"
+msg.classList.remove('mostrar')
+}
+
+if(localStorage.lgpd == 'sim'){
+msg.classList.remove('mostrar')
+}else{
+msg.classList.add('mostrar')
+}
+
+</script>
+<!--cookies..........-->
 
 
 
-<footer></footer>
 
+
+
+<footer>
+<div class="group-footer">
+<div class="sup">
+<ul>
+    <a href=""><li>suporte</li></a>
+    <a href=""><li>suporte</li></a>
+    <a href=""><li>suporte</li></a>
+    <a href=""><li>suporte</li></a>
+    <a href=""><li>suporte</li></a>
+    
+</ul>
+
+</div>
+
+<div class="company-marca">
+    <ul>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        
+    </ul>
+</div>
+
+
+
+<div class="prodcts">
+    <ul>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        
+    </ul>
+</div>
+
+
+
+<div class="more">
+    <ul>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        <a href=""><li>suporte</li></a>
+        
+    </ul>
+</div>
+
+
+
+
+</footer>
+<div class="cop"><p>goutel todos os direitos reservados</p></div>
 
 
 </body>
