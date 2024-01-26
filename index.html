@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -430,6 +431,48 @@ align-items: center;
 }
 
 
+/*summary | details*/
+.group-summ{
+            width: 100%;
+            height: 200px;
+            display: flex;
+
+        }
+    
+        .modal-su{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            background-color: #009ee3;
+            height: 20px;
+            
+        }
+        .icon-modal{
+            margin-right: 12px;
+            cursor: pointer;
+            height: 12px;
+            width: 20px;
+        }
+        .div1{
+            width: 33.33%;
+            height: 200px;
+            background-color: #009ee3;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width:800px){
+            #reposi{
+                display: none;
+            }
+        }
+        @media screen and (max-width:800px){
+            .div1{
+                width: 50%;
+            }
+        }
+
  @media screen and (min-width:800px) and (max-width:1000000000px){
     .posi-p{
         display: none;
@@ -460,6 +503,8 @@ align-items: center;
     }
 }
 
+/*summary | details*/
+
 
 
 
@@ -473,8 +518,8 @@ align-items: center;
       <a href="!"> <li style="padding: 5px; color:  rgb(0, 158, 227);">goutel</li></a>
            <a href="#">   <li style="padding: 5px; color:  rgb(0, 158, 227);">tel</li></a>
          <a href="@">  <li style="padding: 5px; color:  rgb(0, 158, 227);">group G</li></a>
-         <a href="@">  <li style="padding: 5px; color:  rgb(0, 158, 227);">comunidade</li></a>
-         <a href="!">  <li style="padding: 5px; color:  rgb(0, 73, 104);">...+</li></a>
+         <a href="comunidade.html">  <li style="padding: 5px; color:  rgb(0, 158, 227);">comunidade</li></a>
+         <a href="...+">  <li style="padding: 5px; color:  rgb(0, 73, 104);">...+</li></a>
 
         </ul>
     </div>
@@ -492,7 +537,7 @@ align-items: center;
 <div class="sub2"><a  style="color: white;"  href="#">Esporte</a></div>
 
 <div class="sub3">
-    <a href="%"><img width="33px" src="img/logo-icone-favicon.png" height="33px" alt="logo goutel"></a>
+    <a href="index.html"><img width="33px" src="img/logo-icone-favicon.png" height="33px" alt="logo goutel"></a>
 </div>
 
 
@@ -508,6 +553,39 @@ align-items: center;
 
     </nav>
 
+    <details>
+        <summary class="modal-su"><img class="icon-modal"  src="img/icone-seta-baixo.png" alt=""></summary>
+   <div class="group-summ">
+    <div class="div1">
+        <a  style="color: white;"  href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+    </div>
+
+
+
+    <div class="div1">
+        <a  style="color: white;"   href="">web link menu</a>
+        <a   style="color: white;"  href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+    </div>
+
+    <div id="reposi" class="div1">
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+        <a  style="color: white;"   href="">web link menu</a>
+    </div>
+
+   </div>
+
+   
+    </details>
 
 
 
@@ -602,7 +680,7 @@ align-items: center;
         <div class="data-post" style="position: absolute;">
             <p style="background-color: rgb(0, 158, 227); color: white; font-size: 10px; margin: 5px; border-radius: 2px;">00/00/0000</p>
         </div>
-        <div class="reposivel"><video   poster="img/banner2.png"     class="video-top"  class="video-suc" controls width="100%" src="video/trailer-som.mp4"></video></div>
+        <div class="reposivel"><video   poster="img/banner2.png"     style="background-color: #f1f1f1;"     class="video-top"  class="video-suc" controls width="100%" src="video/trailer-som.mp4"></video></div>
        
     
        
@@ -631,9 +709,8 @@ align-items: center;
        
 <img  style="margin-top: 1%; border-radius: 12px; height: 49%; background-color: #f1f1f1;" width="97%" src="img/banner1.png">
 <div class="h1-sug"> <a href="%"><h1 style="margin-left: 10px;">tutulox7377</h1></a> </div>
-
 <img  style=" border-radius: 12px; height: 49%; background-color: #f1f1f1;" width="97%" src="img/banner1.png">
-<div class="h1-sug"> <a href="%"><h1  style="margin-left: 10px;">tutulox7377</h1></a> </div>
+<div class="h1-sug"> <a href="%"><h1  style="margin-left: 10px;">video #rsrr</h1></a> </div>
 
 
     </div>
@@ -671,7 +748,7 @@ align-items: center;
         </div>
         <div class="reposivel">
             
-            <img class="video-top"  height="320px" id="resposi-id-post-img"    class="video-suc"  width="100%" src="https://www.seoclerk.com/pics/000/951/134/f889272345a569d40799d29dca61d254.png"></div>
+            <img class="video-top"  height="320px" id="resposi-id-post-img"      style="background-color: #f1f1f1;"   class="video-suc"  width="100%" src="img/banner1.png"></div>
        
     
        
@@ -870,12 +947,12 @@ msg.classList.add('mostrar')
 
 <div class="prodcts">
     <ul>
-        <p style="color: white;">suporte | contato</p>
-    <a href="tel:84988199"><li style="color: rgb(2, 62, 87);">contato</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);">suporte telefone 12h:45 a 19h:30</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >fag</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >contato formulario</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >suporte</li></a>
+        <p style="color: white;">termos e politica</p>
+    <a href="tel:84988199"><li style="color: rgb(2, 62, 87);">polica de privacidade</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);">termo de uso</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >politica de segurança</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >sobre</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >cookies</li></a>
         
     </ul>
 </div>
@@ -884,12 +961,12 @@ msg.classList.add('mostrar')
 
 <div class="more">
     <ul>
-        <p style="color: white;">suporte | contato</p>
-    <a href="tel:84988199"><li style="color: rgb(2, 62, 87);">contato</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);">suporte telefone 12h:45 a 19h:30</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >fag</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >contato formulario</li></a>
-    <a href=""><li style="color: rgb(2, 62, 87);" >suporte</li></a>
+        <p style="color: white;">serviços | relacionados</p>
+    <a href=""><li style="color: rgb(2, 62, 87);">comunidade</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);">agencia de Marketing</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >tag</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >sistema autmaçao</li></a>
+    <a href=""><li style="color: rgb(2, 62, 87);" >hty</li></a>
         
     </ul>
 </div>
@@ -903,3 +980,4 @@ msg.classList.add('mostrar')
 
 </body>
 </html>
+
