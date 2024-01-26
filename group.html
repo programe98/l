@@ -3,21 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>comunidade - goutel</title>
+    <link rel="shortcut icon" href="img/logo-icone-favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#009ee3" />
+    <style>
+
+   /*cookies*/
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=Poppins:wght@300;400&display=swap');
+
+
+        *{
+    list-style: none;
+            font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: black;
+            text-decoration: none;
+        }
+
+       
+.cookies-msg{
+  
+    border-radius: 2px;
+    width: 100%;
+border-radius: 3px;
+margin-top: 12px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+bottom: 0px;
+        display: none;
+   
+   
+}
+.cookies-msg.mostrar{
+    height: 150px;
+    margin-top: 12px;
+    justify-content: center;
+    display: block;
+    background-color: rgb(243, 243, 242);
+}
+.cookies-txt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+
+}
+.botao-hhd{
+padding: 8px;
+width: 97%;
+margin-top: 5px;
+border: none;
+background-color: rgb(0, 158, 227);
+border-radius: 3px;
+color: white;
+cursor: pointer;
+}
+
+@media screen and (min-width:900px) and (max-width:1000000px){
+    .botao-hhd{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1000000px){
+    .cookies-msg{
+        width: 78%;
+     
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1000000px){
+    .cookies-msg.mostrar{
+       height: 80px;
+     
+    }
+}
+
+
+
+
+
+
+
+.dhmswj{
+  color: rgb(0, 158, 227);
+  border-bottom: 1px solid rgb(0, 158, 227);
+  
+}
+.cookies-txt{
+    margin-top: 5px;
+}
+.avxan{
+color: rgb(68, 69, 70);
+}
+.cookies-btn{
+    width: 100% ;
+    height: 40px;
+    justify-content: center;
+}
+/*cookies......*/
+
+
+
+
+
+
+
+
+        /*footer*/
+        footer{
+            width: 100%;
+      margin-top: 10px;  
+      background-color: rgb(0, 158, 227);
+        }
+
+
+        .group-footer{
+            width: 100%;
+            background-color: rgb(0, 158, 227);
+      margin-top: 10px; 
+      display: flex;
+  
+        }
+
+.sup{
+    width: 25%;
+    background-color: rgb(0, 158, 227);
+    display: flex;
+    justify-content: center;
+}
+
+.company-marca{
+    width: 25%;  
+    background-color: rgb(3, 142, 202);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.prodcts{
+    width: 25%;  
+    background-color: rgb(0, 158, 227);
+    display: flex;
+    justify-content: center;
+}
+.more{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 158, 227);
+}
+
+.cop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid aliceblue;
+    background-color: rgb(0, 158, 227);
+height: 40px;
+}
+
+
+@media screen and (max-width:900px){
+    .group-footer{
+  display: flex;
+  flex-direction: column;
+    }
+}
+@media screen and (max-width:900px){
+    .more, .prodcts, .company-marca , .sup{
+  width: 100%;
+
+    }
+}
+/*footer*/
+
+
+
+
+
+
+
+
+        
+        /*navebar*/
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(0, 158, 227);
+            display: flex;
+            align-items: center;
+        }
+
+
+.sub1{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.sub2{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub3{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@media screen and (max-width:800px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:800px){
+    .sub2{
+        display: none;
+    }
+}
+
+
+
+
+.sub4{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   align-items: center;
+}
+
+@media screen and (max-width:800px){
+    .sub4{
+        display: none;
+    }
+}
+
+.sub5{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+/*navebar*/
+
+
+iframe{
+    width: 100%;
+    height: 1300px;
+}
+    </style>
 </head>
 <body>
-    <script type="text/javascript">
-        function importHotmart(){ 
-             var imported = document.createElement('script'); 
-             imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-             document.head.appendChild(imported); 
-            var link = document.createElement('link'); 
-            link.rel = 'stylesheet'; 
-            link.type = 'text/css'; 
-            link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-            document.head.appendChild(link);	} 
-         importHotmart(); 
-     </script> 
-     <a onclick="return false;" href="https://pay.hotmart.com/U89935160N?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png'></a> 
+    
+ 
+    <nav>
+
+
+        <div class="sub1">
+            <a href="esporte.html">
+            <img style="border-radius: 50%; background-color: yellow; margin-left: 12px; padding: 4px;" width="30px" height="30px" src="img/icone-bola.png" alt=""></a>
+        </div>
+        
+        
+        
+        <div class="sub2"><a  style="color: white;"  href="#">Esporte</a></div>
+        
+        <div class="sub3">
+            <a href="%"><img width="33px" src="img/logo-icone-favicon.png" height="33px" alt="logo goutel"></a>
+        </div>
+        
+        
+        <div class="sub4"><a  style="color: white;"  href="#">TV goutel</a></div>
+        
+        
+        <div class="sub5">
+            <a href="noticia.html">
+            <img style="border-radius: 50%; background-color: yellow; margin-right: 12px; padding: 4px;" width="30px" height="30px" src="img/tv-icon.png" alt=""></a>
+        </a>
+        </div>
+        
+        
+            </nav>
+
+
+
+            <iframe src="https://pay.hotmart.com/U89935160N?off=q1exbzcy" frameborder="0"></iframe>
+
+
+        
+
+
+<!--cookies-->
+            <div class="cookies-msg" id="cookies-mdg">
+                <div class="cookies-txt">
+                    <p class="avxan">cookies: Usamos para personalizar conteúdos e melhorar sua experiência <a class="dhmswj" href="politica-de-privacidade.html">saiba mais</a></p>
+               
+               
+              <div class="cookies-btn">
+                <button onclick="aceito()"   class="botao-hhd">
+                  entendi
+                </button>
+              </div>
+                </div>
+            </div>
+            <script>
+          
+        var msg = document.getElementById('cookies-mdg')
+        
+        function aceito(){
+        localStorage.lgpd = "sim"
+        msg.classList.remove('mostrar')
+        }
+        
+        if(localStorage.lgpd == 'sim'){
+            msg.classList.remove('mostrar')
+        }else{
+            msg.classList.add('mostrar')
+        }
+        
+            </script>
+    <!--cookies..........-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="group-footer">
+        <div class="sup">
+            
+        <ul>
+        <p style="color: white;">suporte | contato</p>
+            <a href="tel:84988199"><li style="color: rgb(2, 62, 87);">contato</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);">suporte telefone 12h:45 a 19h:30</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >fag</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >contato formulario</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >suporte</li></a>
+            
+        </ul>
+        
+        </div>
+        
+        <div class="company-marca">
+            <a href="$"> <img style="  background-color: yellow; border-radius: 5px; padding: 3px; " width="30px" src="img/logo-icone-favicon.png" alt=""></a>
+            <a href="$"> <img style="margin-left: 12px; background-color: yellow; border-radius: 5px; padding: 3px; " width="30px" src="img/logo-icone-favicon.png" alt=""></a>
+            <a href="$"> <img style="margin-left: 12px; background-color: yellow; border-radius: 5px; padding: 3px; " width="30px" src="img/logo-icone-favicon.png" alt=""></a>
+            <a href="$"> <img style="margin-left: 12px; background-color: yellow; border-radius: 5px; padding: 3px; " width="30px" src="img/logo-icone-favicon.png" alt=""></a>
+        <a style="margin-left: 12px; color: yellow;" href="%">...+</a>
+        </div>
+        
+        
+        
+        <div class="prodcts">
+            <ul>
+                <p style="color: white;">termos e politica</p>
+            <a href="tel:84988199"><li style="color: rgb(2, 62, 87);">polica de privacidade</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);">termo de uso</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >politica de segurança</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >sobre</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >cookies</li></a>
+                
+            </ul>
+        </div>
+        
+        
+        
+        <div class="more">
+            <ul>
+                <p style="color: white;">serviços | relacionados</p>
+            <a href=""><li style="color: rgb(2, 62, 87);">comunidade</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);">agencia de Marketing</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >tag</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >sistema autmaçao</li></a>
+            <a href=""><li style="color: rgb(2, 62, 87);" >hty</li></a>
+                
+            </ul>
+        </div>
+        
+        
+        
+        
+        </footer>
+        <div class="cop"><p>goutel todos os direitos reservados</p></div>
+        
+
+
+
+
 </body>
 </html>
