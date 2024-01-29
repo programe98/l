@@ -659,11 +659,13 @@ align-items: center;
               <a  style="color: #009ee3; font-size: 13px;" href="">post1></a>  
              <a  style="color: #009ee3; font-size: 13px;" href="">post2></a>
                <a  style="color: #009ee3; font-size: 13px;" href="">post3></a>
+              
                <br>
 <time style="font-size: 12px;">yyyy-mm-dd</time>
             </div>
-            <a target="_blank" style="margin: 12px;  background-color: #009ee3; color: white; border-radius: 4px; padding: 7px 7px;" href="https://api.whatsapp.com/send?text=https://www.goutel.com.br/post2.html">%</a>
-    
+          
+    <a style="margin: 12px;  background-color: #009ee3; color: white; border-radius: 4px; padding: 7px 7px;" href="javascript:void(0)" onclick="share()">%</a>
+          
     </div>
         <!--share...-->
 
@@ -811,7 +813,26 @@ msg.classList.add('mostrar')
     <div class="cop"><p>goutel todos os direitos reservados</p></div>
     
     
-        
+       
+    
+
+
+
+    <!--share-->
+<script>
+    function share(){
+	if (navigator.share !== undefined) {
+		navigator.share({
+			title: 'goutel - pagina',
+			text: 'description',
+			url: '',
+		})
+		.then(() => console.log('Successful share'))
+		.catch((error) => console.log('Error sharing', error));
+	}
+}
+</script>
+<!--share.....-->
         
 </body>
 </html>
