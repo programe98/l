@@ -5,12 +5,12 @@
     <!--analyts-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>video $6373 #773 - goutel | seja um criador</title>
+    <title>titulo da pagina</title>
     <link rel="shortcut icon" href="img/logo-icone-favicon.png" type="image/x-icon">
     <meta name="theme-color" content="#009ee3" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="descriçao da pagina">
     
     <style>
 
@@ -686,7 +686,7 @@ align-items: center;
      <a style="background-color:  rgb(0, 158, 227);padding: 5px 14px; color: white; margin-left: 3px;"  href="">2</a>
      <a  style="background-color:  rgb(0, 158, 227); padding: 5px 14px; color: white; margin-left: 3px;"  href="">3</a>
      <a  style="background-color:  rgb(0, 158, 227);padding: 5px 14px; color: white; margin-left: 3px;"  href="">...</a>
-     <a  target="_blank"  style=" padding: 4px; margin-left: 2px;"  href="https://api.whatsapp.com/send?text=https://www.goutel.com.br/post2.html"><img width="18px" src="img/share-icon.png" alt=""></a>
+     <a  target="_blank"  style=" padding: 4px; margin-left: 2px;"  href="javascript:void(0)" onclick="share()"><img width="18px" src="img/share-icon.png" alt=""></a>
      </div>
      <!--share | pageviews...-->
      </div>
@@ -823,9 +823,10 @@ msg.classList.add('mostrar')
     function share(){
 	if (navigator.share !== undefined) {
 		navigator.share({
-			title: 'goutel - pagina',
-			text: 'description',
+			title: '',
+			text: '',
 			url: '',
+          
 		})
 		.then(() => console.log('Successful share'))
 		.catch((error) => console.log('Error sharing', error));
