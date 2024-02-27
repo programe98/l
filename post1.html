@@ -1,276 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>article</title>
-<meta name="description" content="description">
-<meta name="keywords" content="keywords">
-<meta name="theme-color" content="#009ee3" />
-<link rel="stylesheet" href="style/post.css">
-<link rel="shortcut icon" href="img/logo-icone-favicon.png" type="image/x-icon">
-<style>
-  
-
-   /*cookies*/
-   *{
-            list-style: none;
-            margin: 0px;
-            padding: 0px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <meta name="theme-color" content="#0091ff" />
+    <title>web</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
             box-sizing: border-box;
-            color: black;
-            text-decoration: none;
         }
 
-       
-.cookies-msg{
-    border-radius: 2px;
-    width: 100%;
-border-radius: 3px;
-margin-top: 12px;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-bottom: 0px;
-        display: none;
-   
-   
-}
-.cookies-msg.mostrar{
-    height: 150px;
-    margin-top: 12px;
-    justify-content: center;
-    display: block;
-    background-color: rgb(243, 243, 242);
-}
-.cookies-txt{
-    display: flex;
-    flex-direction: column;
-    margin-left: 12px;
-
-}
-.botao-hhd{
-padding: 5px;
-width: 97%;
-margin-top: 5px;
-border: none;
-background-color: rgb(0, 158, 227);
-border-radius: 3px;
-color: white;
-cursor: pointer;
-}
-
-
-
-.dhmswj{
-  color: rgb(0, 158, 227);
-  border-bottom: 1px solid rgb(0, 158, 227);
-  
-}
-.cookies-txt{
-    margin-top: 5px;
-}
-.avxan{
-color: rgb(68, 69, 70);
-}
-.cookies-btn{
-    width: 100% ;
-    height: 40px;
-    justify-content: center;
-}
-
-
-@media screen and (min-width:735px) and (max-width:100000px){
-    .botao-hhd{
-        width: 20%;
-    }
-}
-/*cookies......*/
-
-
+            body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
 
 header{
-    height: 45px;
     width: 100%;
-    background-color: #009ee3;
+    height: 10vh ;
+    background-color: rgb(0, 145, 255);
+    max-width: 900px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
 
 .logo{
-    width: 40px;
-    height: 40px;
+    margin-left: 12px;
+    width: 37px;
+    height: 37px;
 }
 
-
+.action-a{
+    margin-right: 12px;
+    color: black;
+    background-color: aliceblue;
+    padding: 6px 33px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 3px;
+}
 
 main{
+    max-width: 900px;
     width: 100%;
-    display: flex;
-    background-color: rgb(217, 236, 253);
-    flex-direction: column;
-    align-items: center;
-}
-
-article{
-    width: 95%;
-   max-width: 1000px;
-   background-color: white;
-          margin-top: 12px;
-    margin-bottom: 12px;
+    height: 90vh;
+    background-color: aliceblue;
 }
 
 footer{
     width: 100%;
-    height: 60px;
-    background-color: #009ee3;
-}
-
-.date-share{
-height: 35px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-time{
-    margin-left: 12px;
-    font-size: 12px;
-}
-
-.btn-share{
-    margin-right: 12px;
-    border: none;
-    background-color: #009ee3;
-    color: white;
-    padding: 7px;
-    border-radius: 2px;
-    cursor: pointer;
-}
-p{
-    margin: 12px;
-}
-h1{
-    margin: 12px;
-}
-h2{
-    margin: 12px;
-}
-h3{
-    margin: 12px;
-}
-h4{
-    margin: 12px;
-}
-h5{
-    margin: 12px;
-}
-h6{
-    margin: 12px;
-}
-
-footer p{
-    color: white;
-}
-
-.footer-a{
-    width: 100%;
+    background-color: rgb(0, 145, 255);
+    max-width: 900px;
+    height: 100px;
     display: flex;
     justify-content: center;
 }
+
+
 footer a{
-    padding: 5px;
+    margin-left: 12px;
     color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 5px;
 }
 
 
-footer ul{
-    display: flex;
+
+.set-share{
+width: 90%;
+max-width: 350px;
+height: 45px;
+border-radius: 7px;
+background-color: white;
+display: flex;
+justify-content: center;
+position: fixed;
+bottom: 12px;
+align-items: center;
 }
 
-.copiware{
-    width: 100%;
-    text-align: center;
+.set-share a{
+color: black;
+text-decoration: none;
+list-style: none;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
-</style>
+    </style>
 </head>
 <body>
-
-    <header>
-        <a href="index.html">
-        <img class="logo" src="img/logo-icone-favicon.png" alt="logo goutel">
-        </a>
-    </header>
+    
+<header>
+    <img src="" alt="logo" class="logo">
+    <a href="#plano" class="action-a">teste grátis</a>
+</header>
 
 
 <main>
-        <article>
-
-        <section class="date-share">
-        <time datetime="2024-01-20">10 de janeiro 2024 12h:30 ~ última atualização</time>
-        <button  onclick="share()" class="btn-share">%</button>
-        </section>
-        
-        <h1>quem realmente descobriu o brasil foram os portugueses ou os índios</h1>
-
-        <div style="width: 100%; display: flex; justify-content: center;"> 
-          <span style="position: absolute;">font/google</span>
-        <img width="95%" style="max-width: 1000px;border-radius: 4px;" height="350px" src="https://escolaeducacao.com.br/wp-content/uploads/2018/08/descobrimento-do-brasil.gif" alt="imagem do decobrimento do brasil">
-       </div>
-
-        <p>muito se tem descutido pelos os brasileiro quem descobriu a república federativa do brasil foram índios ou os portugueses, para responder essa perqunta precisamos voltar para o ano de 1500 ou melhor para 22 de abril de 1500 quando "pedro alves cabral" com sua tripulação encontraram terra avista.</p>
-    <h2>quais os nomes dados a o brasil</h2>
-        <p>essa terra na qual se chamaria brasil ou melhor ilha de veracruz tinha outros nomes até antes de ser descoberta are html texto</p>
-        
-        <p>muito se tem descutido pelos os brasileiro quem descobriu a república federativa do brasil foram índios ou os portugueses, para responder essa perqunta precisamos voltar para o ano de 1500 ou melhor para 22 de abril de 1500 quando "pedro alves cabral" com sua tripulação encontraram terra avista.</p>
-    <h2>quais os nomes dados a o brasil</h2>
-    
-    <p>muito se tem descutido pelos os brasileiro quem descobriu a república federativa do brasil foram índios ou os portugueses, para responder essa perqunta precisamos voltar para o ano de 1500 ou melhor para 22 de abril de 1500 quando "pedro alves cabral" com sua tripulação encontraram terra avista.</p>
- <h2>quais os nomes dados a o brasil</h2>
-    
-    <p>muito se tem descutido pelos os brasileiro quem descobriu a república federativa do brasil foram índios ou os portugueses, para responder essa perqunta precisamos voltar para o ano de 1500 ou melhor para 22 de abril de 1500 quando "pedro alves cabral" com sua tripulação encontraram terra avista.</p>
-
-      </article>
+ 
 </main>
 
 
-
-<div class="cookies-msg" id="cookies-mdg">
-    <div class="cookies-txt">
-        <p class="avxan">cookies: Usamos para personalizar conteúdos e melhorar sua experiência <a class="dhmswj" href="politica-de-privacidade.html">saiba mais</a></p>
-   
-   
-  <div class="cookies-btn">
-    <button onclick="aceito()"   class="botao-hhd">
-      entendi
-    </button>
-  </div>
-    </div>
-</div>
-
-
+<section class="set-share">
+    <a target="_blank" href="https://web.whatsapp.com/send?text=share">zap</a>
+    <a   onclick="share()" class="btn-share" >e-mail</a>
+    <a   onclick="share()" class="btn-share" >facebook</a>
+    <a   onclick="share()" class="btn-share" >x</a>
+</section>
 
 <footer>
-
-<div class="footer-a">
-  <ul>
-
-  <li><a href="politica-de-privacidade.html">politica de privacidade</a></li>
-  <li><a href="mailto:contato@goutel.com.br">contato</a></li>
-  <li><a href="sobre.html">sobre</a></li>
-
-</ul>
-</div>
-<div class="copiware">
-<p>goutel todos os direitos reservados</p>
-</div>
+    <a href="">sobre</a>
+    <a href="">politica de privacidade</a>
+    <a href="">contato</a>
 </footer>
 
-
+<script>// share
+    function share(){
+        if (navigator.share !== undefined) {
+            navigator.share({
+                title: '',
+                text: '',
+                url: '',
+              
+            })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        }
+    }
+    
+    // cookies
+    var msg = document.getElementById('cookies-mdg')
+    
+    function aceito(){
+    localStorage.lgpd = "sim"
+    msg.classList.remove('mostrar')
+    }
+    
+    if(localStorage.lgpd == 'sim'){
+    msg.classList.remove('mostrar')
+    }else{
+    msg.classList.add('mostrar')
+    }
+    
+    </script>
 <script src="script/post.js"></script>
 </body>
 </html>
