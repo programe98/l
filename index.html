@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="description">
-    <meta name="theme-color" content="#0091ff" />
-    <title>web</title>
+    <title>Document</title>
     <style>
         *{
             margin: 0%;
@@ -13,143 +11,79 @@
             box-sizing: border-box;
         }
 
-            body{
+        body{
+            display: flex;
+            align-items: center;
+            background-color: aliceblue;
+            flex-direction: column;
+        }
+
+        header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            width: 100%;
+            height: 200px;
+            background-color: orange;
+            max-width: 900px;
+        }
+        main{
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            }
+        }
+        article{
+            width: 97%;
+            height: 900px;
+            background-color: white;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            max-width: 900px;
+        }
 
-header{
-    width: 100%;
-    height: 10vh ;
-    background-color: rgb(0, 145, 255);
-    max-width: 900px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: orange;
+            max-width: 900px;
+        }
 
-.logo{
-    margin-left: 12px;
-    width: 37px;
-    height: 37px;
-}
+        footer a{
+            margin-left: 12px;
+            text-decoration: none;
+            color: black;
+        }
 
-.action-a{
-    margin-right: 12px;
-    color: black;
-    background-color: aliceblue;
-    padding: 6px 33px;
-    text-decoration: none;
-    list-style: none;
-    border-radius: 3px;
-}
-
-main{
-    max-width: 900px;
-    width: 100%;
-    height: 90vh;
-    background-color: aliceblue;
-}
-
-footer{
-    width: 100%;
-    background-color: rgb(0, 145, 255);
-    max-width: 900px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-
-footer a{
-    margin-left: 12px;
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    margin-top: 5px;
-}
-
-
-
-.set-share{
-width: 90%;
-max-width: 350px;
-height: 45px;
-border-radius: 7px;
-background-color: white;
-display: flex;
-justify-content: center;
-position: fixed;
-bottom: 12px;
-align-items: center;
-}
-
-.set-share a{
-color: black;
-text-decoration: none;
-list-style: none;
-    margin-left: 12px;
-    cursor: pointer;
-}
-
+        .logo{
+            width: 100%;
+            max-width: 900px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
+
+    <header>
+       <a href="index.html"> <img class="logo" src="https://instadelivery.com.br/aa302101741ac9f8d548a0094759ac78.png" alt="logo"> </a>
+    </header>
+
+
+    <main>
+        <article>
+            <time datetime="yyyy-mm-dd">00-00-0000</time>
+        </article>
+    </main>
+
+
+    <footer>
+        <a href="!">sobre</a>
+        <a href="@">politica de privacidade</a>
+        <a href="#">contato</a>
+    </footer>
     
-<header>
-    <img src="" alt="logo" class="logo">
-    <a href="#plano" class="action-a">teste grátis</a>
-</header>
-
-
-<main>
- 
-</main>
-
-
-<section class="set-share">
-    <a target="_blank" href="https://web.whatsapp.com/send?text=share">zap</a>
-    <a   onclick="share()" class="btn-share" >e-mail</a>
-    <a   onclick="share()" class="btn-share" >facebook</a>
-    <a   onclick="share()" class="btn-share" >x</a>
-</section>
-
-<footer>
-    <a href="">sobre</a>
-    <a href="">politica de privacidade</a>
-    <a href="">contato</a>
-</footer>
-
-<script>// share
-    function share(){
-        if (navigator.share !== undefined) {
-            navigator.share({
-                title: '',
-                text: '',
-                url: '',
-              
-            })
-            .then(() => console.log('Successful share'))
-            .catch((error) => console.log('Error sharing', error));
-        }
-    }
-    
-    // cookies
-    var msg = document.getElementById('cookies-mdg')
-    
-    function aceito(){
-    localStorage.lgpd = "sim"
-    msg.classList.remove('mostrar')
-    }
-    
-    if(localStorage.lgpd == 'sim'){
-    msg.classList.remove('mostrar')
-    }else{
-    msg.classList.add('mostrar')
-    }
-    
-    </script>
-<script src="script/post.js"></script>
 </body>
 </html>
